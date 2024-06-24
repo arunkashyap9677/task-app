@@ -1,0 +1,58 @@
+<div class="modal" *ngIf="isVisible">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <div class="new-task-container">
+      <h2>New Task</h2>
+      <div class="toggle-buttons">
+        <button class="toggle-button active">Open</button>
+        <button class="toggle-button">Closed</button>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="entity-name">Entity name</label>
+          <input type="text" id="entity-name" placeholder="Entity name" />
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <div class="date-time-picker">
+            <select>
+              <option>12</option>
+              <!-- Add more options as needed -->
+            </select>
+            <select>
+              <option>00</option>
+              <!-- Add more options as needed -->
+            </select>
+            <select>
+              <option>PM</option>
+              <!-- Add AM option as well -->
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="task-type">Task Type</label>
+          <select id="task-type">
+            <option>Call</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="phone-number">Phone number</label>
+          <input type="text" id="phone-number" placeholder="Phone number" />
+        </div>
+        <div class="form-group">
+          <label for="contact-person">Contact person</label>
+          <input type="text" id="contact-person" placeholder="Contact person" />
+        </div>
+        <div class="form-group">
+          <label for="note">Note (optional)</label>
+          <input type="text" id="note" placeholder="Note (optional)" />
+        </div>
+        <div class="form-actions">
+          <button type="button" class="cancel-button">Cancel</button>
+          <button type="submit" class="save-button">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

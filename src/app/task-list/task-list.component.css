@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.header-left select {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    margin-right: 20px;
+    text-align: right;
+}
+
+.notifications .notification-icon {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.sales-log {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sales-log .log-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sales-log .new-task {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 40px;
+    margin-left: 0px;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+
+
+.sales-log input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f9f9f9;
+}
+
+.status-open {
+    color: orange;
+}
+
+.status-closed {
+    color: green;
+}
+
+.new-task .icon {
+    width: 16px; /* Adjust the size as needed */
+    height:16px; /* Adjust the size as needed */
+}
+.filter{
+    cursor: pointer;
+}
